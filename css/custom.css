@@ -23,12 +23,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #7b5e4a;
+  --color-headline-bg: #91735f;
   --color-headline-text-page: #fffae2;
 
   /* Tekst */
   --color-text: #483325;
-  --color-text-inverted: #fffae2;
+  --color-text-inverted: #483325;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
