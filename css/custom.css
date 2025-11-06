@@ -66,4 +66,10 @@
   --color-info-bg: #ffffff;
   --color-infobox-1-bg: #e5dcc7;
   --color-infobox-2-bg: #faf4e6;
+
+  /* Forms */
+  --form-background-color: #ffffff;
+  --info-background-color: #e5dcc7;
+  --headline-bg-color-inverted: #91735f;
+  --headline-color-inverted: #fffae2;
 }

@@ -1,81 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Indberet Din Tøjkrise</h2>
+        <p>Har du oplevet en akut tøjkrise? Del din oplevelse og hjælp andre i lignende situationer. Alle indberetninger
+          er anonyme og bruges til at forbedre vores rådgivning.</p>
+      </article>
+      <form id="webform">
+        <fieldset>
+          <legend>Personlige oplysninger</legend>
+
+          <label for="name">Dit navn (valgfrit):</label>
+          <input type="text" id="name" name="name" placeholder="Indtast dit navn">
+
+
+          <label for="age">Alder:</label>
+          <select id="age" name="age" required>
+            <option value="">Vælg aldersgruppe</option>
+            <option value="under-18">Under 18</option>
+            <option value="18-25">18-25 år</option>
+            <option value="26-35">26-35 år</option>
+            <option value="36-45">36-45 år</option>
+            <option value="over-45">Over 45 år</option>
+          </select>
+
+          <label for="email">Din email (valgfrit):</label>
+          <input type="email" id="email" name="email" placeholder="Indtast din email">
+
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Krise detaljer</legend>
+
+          <label for="crisis-type">Type af tøjkrise:</label>
+          <select id="crisis-type" name="crisis-type" required>
+            <option value="">Vælg type</option>
+            <option value="morning-panic">Morgen panik - "Jeg har intet at tage på!"</option>
+            <option value="event-stress">Event stress - Speciel lejlighed</option>
+            <option value="weather-confusion">Vejr forvirring</option>
+            <option value="body-image">Kropsimage problemer</option>
+            <option value="trend-pressure">Trend pres</option>
+            <option value="budget-crisis">Budget krise</option>
+            <option value="other">Andet</option>
+          </select>
+
+          <div id="other-crisis-detail">
+            <label for="other-crisis-text">Beskriv din type af tøjkrise:</label>
+            <input type="text" id="other-crisis-text" name="other-crisis-text"
+              placeholder="Skriv hvad din tøjkrise handler om...">
+          </div>
+
+
+          <label for="intensity">Krisens intensitet:</label>
+          <input type="range" id="intensity" name="intensity" min="1" max="10" value="5" required>
+          <div class="range-labels">
+            <span>Mild bekymring</span>
+            <span>Total panik</span>
+          </div>
+
+          <label for="duration">Hvor længe varede krisen?</label>
+          <fieldset class="radio-group">
+            <input type="radio" id="duration-short" name="duration" value="under-30min" required>
+            <label for="duration-short">Under 30 minutter</label>
+
+            <input type="radio" id="duration-medium" name="duration" value="30min-2hours">
+            <label for="duration-medium">30 minutter - 2 timer</label>
+
+            <input type="radio" id="duration-long" name="duration" value="over-2hours">
+            <label for="duration-long">Over 2 timer</label>
+
+            <input type="radio" id="duration-ongoing" name="duration" value="ongoing">
+            <label for="duration-ongoing">Stadig i gang</label>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hvad udløste krisen?</legend>
+
+          <label for="triggers">Vælg alle der passer (du kan vælge flere):</label>
+          <fieldset class="checkbox-group">
+            <input type="checkbox" id="trigger-wardrobe" name="triggers" value="empty-wardrobe">
+            <label for="trigger-wardrobe">Følelse af tom garderobe</label>
+
+            <input type="checkbox" id="trigger-body" name="triggers" value="body-changes">
+            <label for="trigger-body">Kropslige forandringer</label>
+
+            <input type="checkbox" id="trigger-social" name="triggers" value="social-pressure">
+            <label for="trigger-social">Socialt pres</label>
+
+            <input type="checkbox" id="trigger-weather" name="triggers" value="weather">
+            <label for="trigger-weather">Uforudsigeligt vejr</label>
+
+            <input type="checkbox" id="trigger-budget" name="triggers" value="budget">
+            <label for="trigger-budget">Økonomiske begrænsninger</label>
+
+            <input type="checkbox" id="trigger-trends" name="triggers" value="trends">
+            <label for="trigger-trends">Nye trends jeg ikke forstår</label>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Din oplevelse</legend>
+
+          <label for="description">Beskriv din tøjkrise:</label>
+          <textarea id="description" name="description" rows="5"
+            placeholder="Fortæl om din oplevelse - hvad skete der, hvordan føltes det, og hvad hjalp (eller hjalp ikke)?"></textarea>
+
+          <label for="solution">Hvordan løste du krisen?</label>
+          <textarea id="solution" name="solution" rows="3"
+            placeholder="Hvad endte du med at gøre? Fik du hjælp fra nogen?"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Hjælp og anbefalinger</legend>
+
+          <label for="help-rating">Hvor godt hjalp vores råd dig?</label>
+          <select id="help-rating" name="help-rating">
+            <option value="">Vælg en mulighed</option>
+            <option value="">Jeg har ikke brugt jeres råd endnu</option>
+            <option value="very-helpful">Meget hjælpsomt</option>
+            <option value="somewhat-helpful">Noget hjælpsomt</option>
+            <option value="not-helpful">Ikke hjælpsomt</option>
+            <option value="made-worse">Gjorde det værre</option>
+          </select>
+
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            Jeg vil gerne modtage tips til at undgå fremtidige tøjkriser
+          </label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Indberet Krise</button>
+        <button type="reset" class="reset-btn">Ryd formular</button>
+      </form>
+    </section>
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article>
+        <p class="placeholder">Opsummering</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>
