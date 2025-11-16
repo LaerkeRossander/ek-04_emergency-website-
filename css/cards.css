@@ -91,3 +91,125 @@
   content: "\2192";
   margin-left: 1rem;
 }
+
+#cta_open1 {
+  margin-top: 20px;
+}
+
+#cta_open2 {
+  margin-top: 20px;
+}
+
+#cta_open3 {
+  margin-top: 20px;
+}
+
+/* Dialog styling */
+dialog {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  max-width: 700px;
+
+  /* Centrer dialogen */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Styling forbedringer */
+  color: white;
+  font-family: var(--font-family-sans);
+  z-index: 1000;
+}
+
+/* Backdrop styling */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+/* Dialog indhold styling */
+dialog h2,
+dialog h3 {
+  margin-top: 0;
+  color: white;
+}
+
+dialog p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Centrerede lukke-knapper */
+dialog button {
+  background-color: #e380b3;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  margin: 30px auto 30px auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+dialog button:hover {
+  background-color: var(--color-headline-bg);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Overskrifter i dialogerne */
+
+.h1_artikel1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(255, 255, 255);
+  background-color: #91735f;
+}
+
+.h2_artikel1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+/* Artikeltekster inde i dialogerne */
+
+#første_artikel_tekst {
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+#anden_artikel_tekst {
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+#tredje_artikel_tekst {
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+/* Artikelbilleder på forsiden  */
+
+#kjole_img {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+#casual_chic_img {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+#influenza_img {
+  width: 300px;
+  height: auto;
+  justify-self: center;
+}

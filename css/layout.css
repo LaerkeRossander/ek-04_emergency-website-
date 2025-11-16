@@ -5,6 +5,7 @@ body {
   height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 main {
   display: grid;
@@ -19,7 +20,7 @@ main {
 #instruction main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
-/* LAYOUT FOR HEADER AND FOOTER */
+/* LAYOUT FOR HEADER OG FOOTER */
 footer {
   display: grid;
   gap: 10px;
@@ -30,23 +31,30 @@ footer nav {
   justify-content: space-between;
   align-items: center;
 }
+
+/* Specifik justering for header nav */
+header nav {
+  align-items: center;
+}
 header nav > * {
   flex: 1;
 }
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 header ul {
   height: 100%;
   width: clamp(175px, 50%, 300px);
+  align-items: center;
+  gap: 1rem;
 }
 footer ul {
   flex-direction: column;
   padding-left: 1rem;
 }
 
-/* LAYOUT FOR SECTIONS */
+/* LAYOUT FOR SECTIONER */
 #daily,
 #breaking {
   display: grid;

@@ -3,7 +3,7 @@
   --color-bg: #e0e0e0; /* page background /*
 
   /* Header */
-  --color-head-bg: #faf4e6;
+  --color-head-bg: #483325;
 
   /* Logotype */
   --color-logotype-bg: #b4005d;
@@ -28,7 +28,7 @@
 
   /* Tekst */
   --color-text: #483325;
-  --color-text-inverted: #483325;
+  --color-text-inverted: #fffae2;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -52,7 +52,7 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700; */
 
-  /* Text sizes */
+  /* Tekst størrelser */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
   --headline2-size: 1rem;
@@ -69,7 +69,7 @@
 
   /* Forms */
   --form-background-color: #ffffff;
-  --info-background-color: #e5dcc7;
+  --info-background-color: #faf4e6;
   --headline-bg-color-inverted: #91735f;
   --headline-color-inverted: #fffae2;
 }

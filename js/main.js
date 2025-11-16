@@ -19,7 +19,7 @@ oeverst.addEventListener("click", clickOeverst);
 /************** når musen rammer hotspot **************/
 function mouseOverOeverst() {
   console.log("MouseOverOeverst");
-  oeverst.style.fill = "#b4005d";
+  oeverst.style.fill = "#ed1c2391";
 }
 
 /************** når musen flytter sig fra hotspot **************/
@@ -59,7 +59,7 @@ under.addEventListener("click", clickUnder);
 /************** når musen rammer hotspot **************/
 function mouseOverUnder() {
   console.log("MouseOverUnder");
-  under.style.fill = "#b4005d";
+  under.style.fill = "#ed1c2391";
 }
 
 /************** når musen flytter sig fra hotspot **************/
@@ -98,7 +98,7 @@ nederst.addEventListener("click", clickNederst);
 /************** når musen rammer hotspot **************/
 function mouseOverNederst() {
   console.log("MouseOverNederst");
-  nederst.style.fill = "#b4005d";
+  nederst.style.fill = "#ed1c2391";
 }
 
 /************** når musen flytter sig fra hotspot **************/

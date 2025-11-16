@@ -1,119 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <h1 class="logo-text">KRISESKABET</h1>
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Hjælp til tøjkrisen</a></li>
+        <li><a class="menuItem" href="register.html">Indsend din oplevelse</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <img id="logo" src="logo_kriseskabet.png" alt="LOGO" />
+      <div>
+        <h1>MODEKATASTROFE!</h1>
+        <p class="sub">Verden løber tør for outfits!</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="Toejkrise.svg" alt="teaser_img" />
+        <div class="daily_text">
+          <h2>Hjælp til tøjkrisen</h2>
+          <p>
+            Her finder du 3 overlevelsesstrategier, hvis du står ansigt til ansigt med en frygtindgydende tøjkrise.
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="formularbillede.webp" alt="teaser_img" />
+
+        <div class="daily_text">
+          <h2>Har du haft tøjkrise?</h2>
+          <p>
+            Udfyld vores formular og beskriv din oplevelse om din tøjkrise, og hjælp andre ofre i lignende situationer.
+          </p>
+          <a href="register.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+    </section>
+    <section id="breaking">
+      <article class="news_card">
+        <h3>BREAKING: Kjolen, der så perfekt ud i går, er pludselig grim i dag!</h3>
+        <p>Sandheden om de 8 timer, kjolen brugte på at blive sur og besluttede sig for at sabotere din dag.</p>
+        <img src="kjole.webp" id="kjole_img" alt="foersteartikel_img" />
+        <dialog id="dialog1">
+          <form method="dialog">
+            <h1 class="h1_artikel1">BREAKING: Kjolen, der så perfekt ud i går, er pludselig grim i dag!</h1>
+            <h2 class="h2_artikel1">Sandheden om de 8 timer, kjolen brugte på at blive sur og besluttede sig for at
+              sabotere din dag.</h2>
+            <img src="foersteartikel.webp" alt="første_artikel_billede">
+            <div id="første_artikel_tekst">
+              <p>Kender du følelsen? I går aftes stod du foran spejlet, og kjolen sad som en drøm. Farven var spot on,
+                snittet var flatterende, og du tænkte: "Det her er min nye yndlingskjole!" Du gik i seng med en følelse
+                af stilmæssig triumf. Men så sker det...</p>
+
+              <p>I morges tager du den på, og pludselig virker den forkert. Stoffet føles stift, farven er "meh", og du
+                ligner pludselig en, der har fået kjole på af en sur fe. Hvad i alverden skete der i løbet af de otte
+                timer, du sov? Har kjolen haft en identitetskrise? Har den krympet i fornærmelse? Nej, rolig nu. Du er
+                ikke alene – og der er en sjov, psykologisk forklaring!</p>
+
+              <h3>De 3 absolutte syndere bag kjole-svigtet</h3>
+              <p>Det er sjældent kjolen, der har forandret sig. Det er måden, vi ser på den, og de omstændigheder, der
+                omgiver os, der er skiftet. Her er de mest almindelige syndere:</p>
+
+              <h4>1. Belysningens bedrag</h4>
+              <p><strong>Lys er altafgørende!</strong></p>
+              <p><strong>I går aftes:</strong> Du prøvede kjolen i dæmpet, varmt belysning (måske i soveværelset eller i
+                butikkens meget flatterende prøverum). Varmt lys er blødt og skjuler skygger og ujævnheder.</p>
+              <p><strong>I morges:</strong> Du ser den i det ubarmhjertige, kolde dagslys eller under skarp, kunstig
+                loftsbelysning. Nu ser du alle de nuancer, du ignorerede i går – og pludselig fremstår kjolens farve
+                grålig eller mat.</p>
+              <p><em>Fun fact:</em> Butikker bruger belysning, der er designet til at få dig og tøjet til at se bedst
+                muligt ud. Dit køkkenlys? Ikke så meget.</p>
+
+              <h4>2. Spejlet lyver... Til tider!</h4>
+              <p>Vi har alle et 'godt' og et 'dårligt' spejl.</p>
+              <p><strong>I går aftes:</strong> Du så kjolen i et stort spejl, du kunne lide. Du tjekkede kun de gode
+                vinkler – den vinkel, der gav dig slanke ben og en fin talje. Du var i godt humør, og din hjerne ville
+                have, at den så godt ud.</p>
+              <p><strong>I morges:</strong> Du kaster et hurtigt blik i det lille badeværelsesspejl, hvor vinklerne er
+                mærkelige, og du ser tøjet i en mindre flatterende situation. Måske er du træt, stresset, eller har
+                travlt. Hjernen er en kritisk dommer om morgenen.</p>
+
+              <h4>3. Forventningens faldgrube</h4>
+              <p>Dette er den største synder. Det kaldes ofte "Forventningens Skuffelse" inden for psykologi.</p>
+              <p><strong>I går aftes:</strong> Kjolen var ny, spændende, og du visualiserede dig selv i den perfekte
+                situation (fest, middag, arbejdsdag). Forventningen var skyhøj.</p>
+              <p><strong>I morges:</strong> Du har den på igen, og nu er den bare... tøj. Den har mistet sin nyhedsværdi
+                og den magi, du tillagde den. Den har simpelthen ikke kunnet leve op til det perfekte ideal, du skabte i
+                dit hoved aftenen før.</p>
+
+              <h3>Kjole-terapi: Sådan gør du den 'smuk' igen!</h3>
+              <p>Før du sender kjolen i eksil bagerst i skabet, så prøv disse hurtige tricks:</p>
+              <ul>
+                <li><strong>Gå udenfor:</strong> Tag kjolen på, og se den i neutralt, naturligt lys. Du vil
+                  sandsynligvis se, at den stadig er god!</li>
+                <li><strong>Skift tilbehør:</strong> Prøv et andet bælte, en anden jakke, eller et andet par sko. Ofta
+                  er det kombinationen, der er "grim," ikke selve kjolen.</li>
+                <li><strong>Giv den en frisk start:</strong> Læg den væk i en uge. Når du tager den frem igen, har den
+                  genvundet sin 'nyhedsværdi' og dens magi kan vende tilbage!</li>
+              </ul>
+              <p><strong>Konklusionen?</strong> Det er ikke kjolen, det er bare din hjerne, der ofte er træt og
+                selvkritisk om morgenen.</p>
+            </div>
+            <button id="close_btn1">LUK</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open1">Læs mere</button>
+      </article>
+      <article class="news_card">
+        <h3>Ny trend: Folk møder op i joggingtøj og kalder det "casual chic".</h3>
+        <p>Nu kan du møde på arbejde i nattøj... næsten. Se hvordan du styler "casual chic"!</p>
+        <img src="casual_chic.webp.png" id="casual_chic_img" alt="andenartikel_img" />
+        <dialog id="dialog2">
+          <form method="dialog">
+            <h1 class="h1_artikel1">Ny trend: Folk møder op i joggingtøj og kalder det "casual chic".</h1>
+            <h2 class="h2_artikel1">Nu kan du møde på arbejde i nattøj... næsten. Se hvordan du styler "casual chic"!
+            </h2>
+            <img src="andenartikel.webp" alt="anden_artikel_billede">
+            <div id="anden_artikel_tekst">
+              <p>Glem alt om stramme jeans, kradsende uldbukser og skjorter, der klemmer. En revolution skyller ind over
+                kontorer, caféer og fine middage: Joggingtøjet er ikke længere forbeholdt sofaen og en god serie! Den
+                nye modebølge hedder "Casual Chic," og den omfavner det ultimative inden for komfort, men med et twist
+                af stil, der gør det (næsten) acceptabelt at ligne en, der lige er stået ud af sengen.</p>
+
+              <h3>Har vi givet op – eller har vi vundet?</h3>
+              <p>I årevis har vi drømt om at kunne møde på arbejde i vores blødeste sæt. Nu er det en realitet, og
+                modepolitiet (for en gangs skyld) har givet grønt lys. Men lad os være ærlige: "Casual Chic" er ikke det
+                samme som at troppe op i din gamle, plettede sweatshirt fra gymnasiet. Der er regler, mine venner –
+                uskrevne regler for denne (næsten) nattøjs-revolution.</p>
+
+              Regel #1: Det skal ikke se ud som pyjamas (selvom det føles sådan!)
+
+              Nøglen er at vælge joggingtøj i lækre materialer og neutrale farver. Tænk cashmere-blends, silkeblød modal
+              eller fint
+              strik. Farver som grå, sort, navy, beige eller cremet hvid er dine bedste venner. Ingen tegneseriefigurer,
+              tak!
+
+              <h4>Regel #2: Accessorize – som om du mener det!</h4>
+              <p>Dette er, hvor "chic"-delen kommer ind. Et par minimalistiske guldøreringe, et elegant ur, en
+                struktureret håndtaske eller et par fede sneakers kan løfte dit look fra "jeg-har-givet-op" til
+                "jeg-er-moderne-og-komfortabel." Forestil dig en hoodie og matchende joggingbukser med en skarp blazer
+                over, og pludselig er du klar til et møde (måske ikke bestyrelseslokalet, men næsten!).</p>
+
+              <h4>Regel #3: Håret og Makeup'en – Du Er Ikke Sove-Vrag</h4>
+              <p>Selvom dit tøj skriger "sofa-dag," skal dit ansigt fortælle en anden historie. En hurtig makeup, en pæn
+                frisure eller bare en velfriseret "messy bun" kan gøre hele forskellen. Det signalerer, at du har
+                truffet et bevidst valg – ikke at du bare glemte at skifte tøj.</p>
+
+              <h3>Den ultimative casual chic tjekliste:</h3>
+              <ul>
+                <li><strong>Materialer:</strong> Gå efter kvalitet! Blødt, luksuriøst stof er et must.</li>
+                <li><strong>Farver:</strong> Hold det neutralt og ensfarvet for et sofistikeret udtryk.</li>
+                <li><strong>Pasform:</strong> Ikke for stramt, ikke for posset. En velvalgt pasform er guld værd.</li>
+                <li><strong>Sko:</strong> Sneakers er oplagte, men pæne loafers eller endda et par elegante støvler kan
+                  også fungere.</li>
+                <li><strong>Tilbehør:</strong> Guld, sølv, en god taske, solbriller – det er detaljerne, der tæller.
+                </li>
+                <li><strong>Attitude:</strong> Bær det med selvtillid! Du er komfortabel, moderne og har styr på det.
+                </li>
+              </ul>
+
+              <h3>Vågn op, klæd dig på (eller forbliv klædt på), og erobr dagen!</h3>
+              <p>Så næste gang du overvejer at skifte ud af dit behagelige tøj om morgenen, så tænk dig om en ekstra
+                gang. Måske er det på tide at omfavne "Casual Chic" fuldt ud. Du får komfort, stil og den uovertrufne
+                følelse af at have "snydt" systemet, mens du stadig ser brandgodt ud.</p>
+              <p><strong>Bare husk:</strong> Selvom det føles som pyjamas, er det ikke pyjamas. Men du er velkommen til
+                at tage en lur i det i frokostpausen. Vi dømmer ikke!</p>
+            </div>
+            <button id="close_btn2">LUK</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open2">Læs mere</button>
+      </article>
+      <article class="news_card">
+        <h3>Eksperter advarer: Tøjkriser spreder sig som influenza - symptomer inkluderer: svedeture, tårer og
+          20 minutters forsinkelser</h3>
+        <p>Tøjkrisen er en reel trussel. Få lægens (modeekspertens) råd her!</p>
+        <img src="influenza.webp" id="influenza_img" alt="tredjeartikel_img" />
+        <dialog id="dialog3">
+          <form method="dialog">
+            <h1 class="h1_artikel1">Eksperter advarer: Tøjkriser spreder sig som influenza - Symptomer inkluderer:
+              svedeture, tårer og 20 minutters
+              forsinkelser.</h1>
+            <h2 class="h2_artikel1">Tøjkrisen er en reel trussel. Få lægens (modeekspertens) råd her!
+            </h2>
+            <img src="tredjeartikel.webp" alt="tredje_artikel_billede">
+            <div id="tredje_artikel_tekst">
+              <p>Har du vågnet op til lyden af din egen stønnen foran et åbent klædeskab? Er dine morgener præget af
+                febrilske svedeture, desperate tårer og en uundgåelig forsinkelse, der sender din planlægning ud i frit
+                fald? Tillykke, du er sandsynligvis ramt af den nye epidemi, der spreder sig hurtigere end de seneste
+                udsalg: Tøjkrisen!</p>
+
+              <p>Eksperter (fra modepolitiet og psykologiske modeklinikker) advarer om, at denne yderst smitsomme
+                tilstand nu hærger i hjem over hele landet. Den rammer uden varsel, uanset hvor fyldt dit skab er, og
+                efterlader ofrene i en tilstand af panik og stilmæssig handlingslammelse.</p>
+
+              <h3>De skræmmende symptomer på tøjkrise-influenzaen</h3>
+              <ul>
+                <li><strong>Svedeture:</strong> Den paniske følelse, når du prøver det ene sæt efter det andet, og intet
+                  virker. Kroppen reagerer med en kamp-eller-flugt-respons over for en trussel fra en upassende bluse.
+                </li>
+
+                <li><strong>Tårer:</strong> Når din yndlingsjeans pludselig føles "forkerte", eller når du ser dig selv
+                  i spejlet og tænker "jeg ligner en pose nødder." Det er okay at græde – det er et tegn på dyb
+                  stilmæssig frustration.</li>
+
+                <li><strong>20 minutters forsinkelse (minimum!):</strong> Dette er det mest pålidelige symptom. Tiden
+                  flyver, mens du fortvivlet forsøger at finde et acceptabelt outfit, og pludselig er du langt bagud i
+                  din tidsplan. Møder, aftaler og børnehaveafleveringer lider alle under denne tidsrøvende plage.</li>
+
+                <li><strong>"Jeg har INTET at tage på!"-udbrud:</strong> En klassiker, ofte leveret foran et proppet
+                  skab.</li>
+
+                <li><strong>Tøj-bunker:</strong> Symptomet på, at dit gulv er blevet din midlertidige tøjstativ.</li>
+              </ul>
+
+              <h3>Diagnosen er klar: du har tøjkrise! Hvad nu?</h3>
+              <p>Frygt ikke! Selvom tøjkrisen er en snigende fjende, er der kurer og forebyggende foranstaltninger.
+                Vores "modeekspert-læge" har udskrevet en recept, der kan redde din morgen og dit humør.</p>
+
+              <h4>Recept #1: Den digitale detox (i skabet)</h4>
+              <p><strong>Problemet:</strong> For mange valgmuligheder skaber kaos.</p>
+              <p><strong>Kuren:</strong> Ryd ud! Hvis du ikke har brugt det i et år, eller hvis det ikke giver dig
+                glæde, så er det tid til at sige farvel. Et mere overskueligt skab reducerer panikken.</p>
+
+              <h4>Recept #2: Uniform-metoden (din dagligdags redning)</h4>
+              <p><strong>Problemet:</strong> Hver morgen er en ny stilmæssig udfordring.</p>
+              <p><strong>Kuren:</strong> Find 3-5 "go-to" outfits, der altid virker for dig. Tænk Steve Jobs (sort
+                rullekrave og jeans) eller en simpel kjole med cardigan. Hav dem klar. Når krisen rammer, tager du bare
+                et af disse. Genialt i sin enkelhed!</p>
+
+              <h4>Recept #3: Spejlets ærlige ven (den ubarmhjertige belysning)</h4>
+              <p><strong>Problemet:</strong> Du prøver tøj i dårligt lys og får et forkert indtryk.</p>
+              <p><strong>Kuren:</strong> Sørg for god, naturlig belysning, når du prøver tøj. Installer et par gode
+                pærer ved dit spejl. Og husk, at det er okay, hvis et stykke tøj ser anderledes ud i dagslys end i
+                aftenbelysning. Det handler om kontekst!</p>
+
+              <h4>Recept #4: Forberedelse er halvdelen af kampen (og tiden)</h4>
+              <p><strong>Problemet:</strong> Du tager beslutninger under pres.</p>
+              <p><strong>Kuren:</strong> Vælg dit outfit aftenen før. Ja, vi ved, det lyder kedeligt. Men tænk på de
+                ekstra 20 minutters søvn – eller kaffe! Det fjerner morgenens stressfaktor og giver dig en flyvende
+                start.</p>
+
+              Bliv immun over for tøjkrisen!
+
+              Tøjkrisen er en alvorlig tilstand, men den kan bekæmpes. Med en smule planlægning, en god udrydning og en
+              solid
+              "uniform-strategi" kan du blive immun over for denne stilmæssige plage. Husk, at dit tøj skal tjene dig –
+              ikke omvendt.
+
+              Så tag kampen op, og sig farvel til svedeture, tårer og forsinkelser! Din morgen og dit humør vil takke
+              dig.</h3>
+              <button id="close_btn3">LUK</button>
+          </form>
+        </dialog>
+        <button class="cta_btn" id="cta_open3">Læs mere</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/dialog.js"></script>
+</body>
+
 </html>

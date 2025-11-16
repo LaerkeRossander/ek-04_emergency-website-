@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/burger.css" />
   <link rel="stylesheet" href="css/cards.css" />
   <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/infographic.css" />
   <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
 </head>
@@ -21,11 +22,13 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html">
+          <h1 class="logo-text">KRISESKABET</h1>
+        </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Hjælp til tøjkrisen</a></li>
+        <li><a class="menuItem" href="register.html">Indsend din oplevelse</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -36,10 +39,10 @@
   </header>
 
   <main>
-    <h1>INDBERET</h1>
+    <h1>FORTÆL OS OM DIN OPLEVELSE</h1>
     <section id="form-section">
       <article id="form-info">
-        <h2>Indberet Din Tøjkrise</h2>
+        <h2>Indberet din tøjkrise</h2>
         <p>Har du oplevet en akut tøjkrise? Del din oplevelse og hjælp andre i lignende situationer. Alle indberetninger
           er anonyme og bruges til at forbedre vores rådgivning.</p>
       </article>
@@ -174,9 +177,8 @@
     </section>
     <section id="form-summary">
       <h2>Summary</h2>
-      <article>
-        <p class="placeholder">Opsummering</p>
-      </article>
+      <div id="summary-content">
+        <!-- Summary content will be dynamically inserted here -->
     </section>
   </main>
   <footer>
@@ -207,7 +209,8 @@
   </footer>
   <script src="js/burger.js"></script>
   <script src="js/form.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
+  <script src="js/dialog.js"></script>
 </body>
 
 </html>
