@@ -79,6 +79,7 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
@@ -166,9 +167,11 @@ dialog button:hover {
 
 .h1_artikel1 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin: 20px 0 20px -2rem;
+  padding: 1rem 2rem;
   color: rgb(255, 255, 255);
   background-color: #91735f;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .h2_artikel1 {
@@ -180,18 +183,21 @@ dialog button:hover {
 /* Artikeltekster inde i dialogerne */
 
 #første_artikel_tekst {
-  margin-top: 1rem;
   color: rgb(0, 0, 0);
+  margin: 20px;
+  margin-top: 40px;
 }
 
 #anden_artikel_tekst {
-  margin-top: 1rem;
   color: rgb(0, 0, 0);
+  margin: 20px;
+  margin-top: 40px;
 }
 
 #tredje_artikel_tekst {
-  margin-top: 1rem;
   color: rgb(0, 0, 0);
+  margin: 20px;
+  margin-top: 40px;
 }
 
 /* Artikelbilleder på forsiden  */
@@ -210,6 +216,22 @@ dialog button:hover {
 
 #influenza_img {
   width: 300px;
+  height: auto;
+  justify-self: center;
+}
+
+#første_artikel_billede {
+  width: 400px;
+  height: auto;
+  justify-self: center;
+}
+#anden_artikel_billede {
+  width: 400px;
+  height: auto;
+  justify-self: center;
+}
+#tredje_artikel_billede {
+  width: 400px;
   height: auto;
   justify-self: center;
 }

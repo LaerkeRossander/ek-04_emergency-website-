@@ -1,3 +1,6 @@
+/* Import Creepster font fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2"), url("/fonts/Rubik-Regular.woff") format("woff");

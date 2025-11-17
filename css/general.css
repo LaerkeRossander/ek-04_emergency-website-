@@ -106,6 +106,7 @@ nav a {
   justify-content: flex-start;
   align-items: center;
   height: 100%;
+  gap: 1rem;
 }
 
 #logotype-wrapper > a {
@@ -125,26 +126,59 @@ nav a {
 
 /* Logo tekst styling - mere specifik for at undgå overriding */
 #logotype-wrapper .logo-text {
-  font-family: var(--font-family-sans);
-  font-size: 2.8rem;
-  font-weight: 900;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 1;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
+  font-family: "Creepster", cursive !important;
+  font-size: 2.8rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  margin: 0 !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
   transition: all 0.3s ease;
 
   /* Ekstrem 3D text-shadow effekt */
   text-shadow: 2px 2px 0px #e380b3, 4px 4px 0px #a14b8e, 6px 6px 0px #000000, 8px 8px 0px #483325, 10px 10px 0px #483325;
 
   /* Gradient på teksten for ekstra effekt */
-  background: linear-gradient(45deg, #ffffff, #f0f0f0);
+  background: linear-gradient(45deg, #ffffff, #dddddd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* LILLE DARK MODE KNAP */
+.dark-mode-mini-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  margin-left: 260px;
+}
+
+.dark-mode-mini-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode-mini-btn .toggle-icon {
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode aktiv styling for lille knap */
+html.dark-mode .dark-mode-mini-btn {
+  background: rgba(74, 144, 226, 0.3);
+  border-color: rgba(74, 144, 226, 0.5);
 }
 
 /* Global menu */
@@ -174,4 +208,29 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+/* DARK MODE VARIABLER */
+html.dark-mode {
+  --color-bg: #343434;
+  --color-text: #fffae2;
+  --color-head-bg: #91735f;
+  --color-logotype-bg: #b4005d;
+  --color-text-logotype: #f0f0f0;
+  --color-menu-bg: #e380b3;
+  --color-link-bg: #333333;
+  --color-link-hover: #555555;
+  --color-link-active: #666666;
+  --color-headline-bg: #e5dcc7;
+  --color-headline-text-page: #404040;
+  --color-text-inverted: #1a1a1a;
+  --color-card-bg: #332922;
+  --color-cta-card-bg: #8b0048;
+  --color-news-bg: #332922;
+  --color-news-bg-inverted: #655245;
+  --color-cta-newscard-bg: #8b0048;
+  --color-cta-newscard-bg-inverted: #e380b3;
+  --color-info-bg: #2d2d2d;
+  --color-infobox-1-bg: #333333;
+  --color-infobox-2-bg: #404040;
 }

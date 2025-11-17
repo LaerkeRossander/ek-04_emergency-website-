@@ -24,11 +24,15 @@
         <a href="index.html">
           <h1 class="logo-text">KRISESKABET</h1>
         </a>
+        <button id="dark-mode-toggle" class="dark-mode-mini-btn" aria-label="Toggle dark mode">
+          <span class="toggle-icon">🌙</span>
+        </button>
       </div>
       <ul class="menu">
         <li><a class="menuItem" href="instruction.html">Hjælp til tøjkrisen</a></li>
         <li><a class="menuItem" href="register.html">Indsend din oplevelse</a></li>
       </ul>
+
       <button class="burger">
         <span class="line"></span>
         <span class="line"></span>
@@ -38,7 +42,7 @@
   </header>
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img id="logo" src="logo_kriseskabet.png" alt="LOGO" />
+      <img id="logo" src="logo_kriseskabet.png" alt="LOGO">
       <div>
         <h1>MODEKATASTROFE!</h1>
         <p class="sub">Verden løber tør for outfits!</p>
@@ -48,7 +52,7 @@
   <main>
     <section id="daily">
       <article class="daily_card">
-        <img src="Toejkrise.svg" alt="teaser_img" />
+        <img src="Toejkrise.svg" alt="teaser_img">
         <div class="daily_text">
           <h2>Hjælp til tøjkrisen</h2>
           <p>
@@ -58,7 +62,7 @@
         </div>
       </article>
       <article class="daily_card">
-        <img src="formularbillede.webp" alt="teaser_img" />
+        <img src="formularbillede.webp" alt="teaser_img">
 
         <div class="daily_text">
           <h2>Har du haft tøjkrise?</h2>
@@ -79,7 +83,7 @@
             <h1 class="h1_artikel1">BREAKING: Kjolen, der så perfekt ud i går, er pludselig grim i dag!</h1>
             <h2 class="h2_artikel1">Sandheden om de 8 timer, kjolen brugte på at blive sur og besluttede sig for at
               sabotere din dag.</h2>
-            <img src="foersteartikel.webp" alt="første_artikel_billede">
+            <img src="foersteartikel.webp" id="første_artikel_billede" alt="første_artikel_billede">
             <div id="første_artikel_tekst">
               <p>Kender du følelsen? I går aftes stod du foran spejlet, og kjolen sad som en drøm. Farven var spot on,
                 snittet var flatterende, og du tænkte: "Det her er min nye yndlingskjole!" Du gik i seng med en følelse
@@ -148,7 +152,7 @@
             <h1 class="h1_artikel1">Ny trend: Folk møder op i joggingtøj og kalder det "casual chic".</h1>
             <h2 class="h2_artikel1">Nu kan du møde på arbejde i nattøj... næsten. Se hvordan du styler "casual chic"!
             </h2>
-            <img src="andenartikel.webp" alt="anden_artikel_billede">
+            <img src="andenartikel.webp" id="anden_artikel_billede" alt="anden_artikel_billede">
             <div id="anden_artikel_tekst">
               <p>Glem alt om stramme jeans, kradsende uldbukser og skjorter, der klemmer. En revolution skyller ind over
                 kontorer, caféer og fine middage: Joggingtøjet er ikke længere forbeholdt sofaen og en god serie! Den
@@ -216,7 +220,7 @@
               forsinkelser.</h1>
             <h2 class="h2_artikel1">Tøjkrisen er en reel trussel. Få lægens (modeekspertens) råd her!
             </h2>
-            <img src="tredjeartikel.webp" alt="tredje_artikel_billede">
+            <img src="tredjeartikel.webp" id="tredje_artikel_billede" alt="tredje_artikel_billede">
             <div id="tredje_artikel_tekst">
               <p>Har du vågnet op til lyden af din egen stønnen foran et åbent klædeskab? Er dine morgener præget af
                 febrilske svedeture, desperate tårer og en uundgåelig forsinkelse, der sender din planlægning ud i frit
@@ -282,8 +286,9 @@
               ikke omvendt.
 
               Så tag kampen op, og sig farvel til svedeture, tårer og forsinkelser! Din morgen og dit humør vil takke
-              dig.</h3>
-              <button id="close_btn3">LUK</button>
+              dig.
+            </div>
+            <button id="close_btn3">LUK</button>
           </form>
         </dialog>
         <button class="cta_btn" id="cta_open3">Læs mere</button>
@@ -321,6 +326,7 @@
   <script src="js/main.js"></script>
   <script src="js/form.js"></script>
   <script src="js/dialog.js"></script>
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>
