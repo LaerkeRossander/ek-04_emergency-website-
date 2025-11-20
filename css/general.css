@@ -2,6 +2,7 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+  color-scheme: light dark;
 }
 
 header {
@@ -212,25 +213,28 @@ footer a {
 
 /* DARK MODE VARIABLER */
 html.dark-mode {
-  --color-bg: #343434;
+  color-scheme: dark;
+  --color-bg: #4d4d4d;
   --color-text: #fffae2;
   --color-head-bg: #91735f;
   --color-logotype-bg: #b4005d;
   --color-text-logotype: #f0f0f0;
   --color-menu-bg: #e380b3;
-  --color-link-bg: #333333;
+  --color-link-bg: #655245;
   --color-link-hover: #555555;
   --color-link-active: #666666;
   --color-headline-bg: #e5dcc7;
   --color-headline-text-page: #404040;
   --color-text-inverted: #1a1a1a;
   --color-card-bg: #332922;
-  --color-cta-card-bg: #8b0048;
+  --color-cta-card-bg: #e380b3;
   --color-news-bg: #332922;
   --color-news-bg-inverted: #655245;
   --color-cta-newscard-bg: #8b0048;
   --color-cta-newscard-bg-inverted: #e380b3;
   --color-info-bg: #2d2d2d;
-  --color-infobox-1-bg: #333333;
-  --color-infobox-2-bg: #404040;
+  --color-infobox-1-bg: #48382c;
+  --color-infobox-2-bg: #655245;
+  --form-background-color: #332922;
+  --info-background-color: #655245;
 }
