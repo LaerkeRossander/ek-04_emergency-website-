@@ -1,0 +1,29 @@
+/* Import Creepster font fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2"), url("/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2");
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2");
+  font-weight: var(--font-weight-light);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-VariableFont_wght.woff2") format("woff2");
+  font-weight: var(--font-weight-medium);
+  font-style: normal;
+}
